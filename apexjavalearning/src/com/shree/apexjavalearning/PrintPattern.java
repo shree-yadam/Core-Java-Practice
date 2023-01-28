@@ -9,7 +9,8 @@ public class PrintPattern {
 		//downwardTriangleStarPattern(6);
 		//reversePyramidStarPattern(7);
 		//rightDownMirrorStarPattern(8);
-		rightPascalTrianglePattern(11);
+		//rightPascalTrianglePattern(11);
+		leftPascalTrianglePattern(11);
 	}
 	
 	public static void rightTriangleStarPattern(int depth) {
@@ -23,7 +24,7 @@ public class PrintPattern {
 	
 	public static void leftTriangleStarPattern(int depth) {
 		for(int i = 0; i < depth; i++) {
-			for(int j = 0; j < depth - i; j++) {
+			for(int j = 0; j < depth - i - 1; j++) {
 				System.out.print("  ");
 			}
 			for(int j = 0; j <= i; j++) {
@@ -99,11 +100,11 @@ public class PrintPattern {
 	
 	public static void rightDownMirrorStarPattern(int depth) {
 		for(int i = depth; i > 0; i-- ) {
-			for(int j = depth; j > i ; j--) {
-				System.out.print(" ");
+			for(int j = depth; j >= i ; j--) {
+				System.out.print("  ");
 			}
 			for(int j = 0; j < i; j++) {
-				System.out.print("*");
+				System.out.print("* ");
 			}
 			System.out.println("");
 		}
@@ -114,6 +115,13 @@ public class PrintPattern {
 		
 		rightTriangleStarPattern(depth/2 + 1);
 		downwardTriangleStarPattern(depth/2);
+	}
+	
+	public static void leftPascalTrianglePattern(int maxDepth) {
+		int depth = (maxDepth%2 == 0) ? maxDepth - 1: maxDepth;
+		
+		leftTriangleStarPattern(depth/2 + 1);
+		rightDownMirrorStarPattern(depth/2);
 	}
 
 }
