@@ -10,7 +10,8 @@ public class PrintPattern {
 		//reversePyramidStarPattern(7);
 		//rightDownMirrorStarPattern(8);
 		//rightPascalTrianglePattern(11);
-		leftPascalTrianglePattern(11);
+		//leftPascalTrianglePattern(11);
+		sandglassStarPattern(6);
 	}
 	
 	public static void rightTriangleStarPattern(int depth) {
@@ -122,6 +123,12 @@ public class PrintPattern {
 		
 		leftTriangleStarPattern(depth/2 + 1);
 		rightDownMirrorStarPattern(depth/2);
+	}
+	
+	public static void sandglassStarPattern(int depth) {
+		
+		reversePyramidStarPattern(depth);
+		pyramidStarPattern(depth);
 	}
 
 }
