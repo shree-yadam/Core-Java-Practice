@@ -11,7 +11,8 @@ public class PrintPattern {
 		//rightDownMirrorStarPattern(8);
 		//rightPascalTrianglePattern(11);
 		//leftPascalTrianglePattern(11);
-		sandglassStarPattern(6);
+		//sandglassStarPattern(6);
+		hollowSquarePattern(5);
 	}
 	
 	public static void rightTriangleStarPattern(int depth) {
@@ -129,6 +130,24 @@ public class PrintPattern {
 		
 		reversePyramidStarPattern(depth);
 		pyramidStarPattern(depth);
+	}
+	
+	public static void hollowSquarePattern(int width) {
+		for(int i = 0; i < width; i++) {
+			System.out.print("* ");
+		}
+		for(int i = 0; i < width - 2; i++) {
+			System.out.println("");
+			System.out.print("* ");
+			for(int j = 0; j < width - 2; j++) {
+				System.out.print("  ");
+			}
+			System.out.print("* ");
+		}
+		System.out.println("");
+		for(int i = 0; i < width; i++) {
+			System.out.print("* ");
+		}
 	}
 
 }
