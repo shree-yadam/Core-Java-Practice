@@ -2,15 +2,17 @@ package com.shree.apexjavalearning;
 
 public class PrintPattern {
 	public static void main(String[] args) {
-		//printRightTriangleStarPattern(8);
-		//printLeftTriangleStarPattern(8);
-		//printPyramidStarPattern(6);
-		//printDiamondStarPattern(11);
+		//rightTriangleStarPattern(8);
+		//leftTriangleStarPattern(8);
+		//pyramidStarPattern(6);
+		//diamondStarPattern(11);
 		//downwardTriangleStarPattern(6);
-		reversePyramidStarPattern(7);
+		//reversePyramidStarPattern(7);
+		//rightDownMirrorStarPattern(8);
+		rightPascalTrianglePattern(11);
 	}
 	
-	public static void printRightTriangleStarPattern(int depth) {
+	public static void rightTriangleStarPattern(int depth) {
 		for(int i = 0; i < depth; i++) {
 			for(int j = 0; j <= i; j++) {
 				System.out.print("* ");
@@ -19,7 +21,7 @@ public class PrintPattern {
 		}
 	}
 	
-	public static void printLeftTriangleStarPattern(int depth) {
+	public static void leftTriangleStarPattern(int depth) {
 		for(int i = 0; i < depth; i++) {
 			for(int j = 0; j < depth - i; j++) {
 				System.out.print("  ");
@@ -31,7 +33,7 @@ public class PrintPattern {
 		}
 	}
 	
-	public static void printPyramidStarPattern(int depth) {
+	public static void pyramidStarPattern(int depth) {
 		for(int i = 0; i < depth; i++) {
 			for(int j = 0; j < depth - i; j++) {
 				System.out.print(" ");
@@ -43,7 +45,7 @@ public class PrintPattern {
 		}
 	}
 	
-	public static void printDiamondStarPattern(int maxDepth) {
+	public static void diamondStarPattern(int maxDepth) {
 		if(maxDepth%2 == 0) {
 			maxDepth--;
 		}
@@ -76,7 +78,7 @@ public class PrintPattern {
 	public static void downwardTriangleStarPattern(int depth) {
 		for(int i = depth; i > 0; i--) {
 			for(int j = 0; j < i; j++ ) {
-				System.out.print("*");
+				System.out.print("* ");
 			}
 			System.out.println("");
 		}
@@ -93,6 +95,25 @@ public class PrintPattern {
 			System.out.println("");
 		}
 		
+	}
+	
+	public static void rightDownMirrorStarPattern(int depth) {
+		for(int i = depth; i > 0; i-- ) {
+			for(int j = depth; j > i ; j--) {
+				System.out.print(" ");
+			}
+			for(int j = 0; j < i; j++) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+	}
+	
+	public static void rightPascalTrianglePattern(int maxDepth) {
+		int depth = (maxDepth%2 == 0) ? maxDepth - 1: maxDepth;
+		
+		rightTriangleStarPattern(depth/2 + 1);
+		downwardTriangleStarPattern(depth/2);
 	}
 
 }
