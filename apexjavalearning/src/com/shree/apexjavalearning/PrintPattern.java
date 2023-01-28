@@ -5,7 +5,8 @@ public class PrintPattern {
 		//printRightTriangleStarPattern(8);
 		//printLeftTriangleStarPattern(8);
 		//printPyramidStarPattern(6);
-		printDiamondStarPattern(11);
+		//printDiamondStarPattern(11);
+		downwardTriangleStarPattern(6);
 		
 	}
 	
@@ -68,6 +69,15 @@ public class PrintPattern {
 				System.out.print("*");
 			}
 
+			System.out.println("");
+		}
+	}
+	
+	public static void downwardTriangleStarPattern(int depth) {
+		for(int i = depth; i > 0; i--) {
+			for(int j = 0; j < i; j++ ) {
+				System.out.print("*");
+			}
 			System.out.println("");
 		}
 	}
