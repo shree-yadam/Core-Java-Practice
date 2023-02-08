@@ -2,7 +2,7 @@ package com.shree.apexjavalearning;
 
 public class Vehicle {
 
-	public void honk() {
+	protected void honk() {
 		System.out.println("Vehicle honks");
 	}
 }
