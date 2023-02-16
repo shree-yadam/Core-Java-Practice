@@ -11,5 +11,11 @@ public class VarDemo {
 		// It is simply user-defined variable name.
 		int var = 1;
 		System.out.println("Value of var: " + var);
+		
+		// Interestingly, in the following sequence, var is used
+		// as both the type of declaration and as a variable name
+		// in the initializer.
+		var k = -var;
+		System.out.println("Value of k: " + k);
 	}
 }
