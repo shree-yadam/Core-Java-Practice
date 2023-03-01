@@ -42,9 +42,7 @@ class BoxWeight extends Box {
 
     // constructor for BoxWeight
     BoxWeight(double w, double h, double d, double m) {
-        width = w;
-        height = h;
-        depth = d;
+        super(w, h, d);
         weight = m;
     }
 }
