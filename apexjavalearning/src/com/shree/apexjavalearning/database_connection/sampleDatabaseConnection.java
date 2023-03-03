@@ -16,8 +16,9 @@ public class sampleDatabaseConnection {
 			Connection con = DriverManager.getConnection(connectionString, username, password);
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM users");
-			while(rs.next()) {
-				User user = new User(rs.getInt("id"), rs.getString("name"), rs.getInt("age"), rs.getString("email"));
+			while (rs.next()) {
+				User user = new User(rs.getInt("id"), rs.getString("name"), 
+						rs.getInt("age"), rs.getString("email"));
 				System.out.println(user);
 			}
 			con.close();
@@ -29,7 +30,7 @@ public class sampleDatabaseConnection {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		getDatabaseConnection();
 	}
