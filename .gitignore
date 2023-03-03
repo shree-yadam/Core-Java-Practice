@@ -1,5 +1,6 @@
 mysql-connector-j-8.0.32/
 .DS_Store
+*.pages
 
 ##############################
 ## Java
