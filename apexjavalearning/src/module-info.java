@@ -6,4 +6,5 @@
  *
  */
 module apexjavalearning {
+	requires java.sql;
 }
