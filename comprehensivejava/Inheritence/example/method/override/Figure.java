@@ -1,6 +1,6 @@
 package Inheritence.example.method.override;
 
-public class Figure {
+abstract public class Figure {
     double dim1;
     double dim2;
 
@@ -9,8 +9,6 @@ public class Figure {
         dim2 = b;
     }
 
-    double area() {
-        System.out.println("Area for figure is undefined.");
-        return 0;
-    }
+    // area is now abstract method
+    abstract double area();
 }
