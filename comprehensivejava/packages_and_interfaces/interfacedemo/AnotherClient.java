@@ -1,4 +1,4 @@
-package PackagesAndInterfaces.InterfaceDemo;
+package packages_and_interfaces.interfacedemo;
 
 // Another implementation of Callback.
 public class AnotherClient implements Callback{

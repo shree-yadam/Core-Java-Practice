@@ -1,6 +1,6 @@
-package PackagesAndInterfaces.AccessExample.p2;
+package packages_and_interfaces.accessexample.p2;
 
-import PackagesAndInterfaces.AccessExample.p1.Protection;
+import packages_and_interfaces.accessexample.p1.Protection;
 
 public class OtherPackage {
     OtherPackage() {

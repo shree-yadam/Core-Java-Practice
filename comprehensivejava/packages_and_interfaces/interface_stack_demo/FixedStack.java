@@ -1,4 +1,4 @@
-package PackagesAndInterfaces.interface_stack_demo;
+package packages_and_interfaces.interface_stack_demo;
 
 // An implementation of IntStack that uses fixed storage
 public class FixedStack implements IntStack {

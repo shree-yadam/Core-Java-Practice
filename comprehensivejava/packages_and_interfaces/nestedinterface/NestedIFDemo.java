@@ -1,4 +1,4 @@
-package PackagesAndInterfaces.NestedInterface;
+package packages_and_interfaces.nestedinterface;
 
 // A nested interface example.
 

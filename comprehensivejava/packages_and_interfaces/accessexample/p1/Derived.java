@@ -1,4 +1,4 @@
-package PackagesAndInterfaces.AccessExample.p1;
+package packages_and_interfaces.accessexample.p1;
 
 public class Derived extends Protection{
     Derived() {

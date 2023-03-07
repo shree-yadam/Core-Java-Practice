@@ -1,4 +1,4 @@
-package PackagesAndInterfaces.interface_stack_demo;
+package packages_and_interfaces.interface_stack_demo;
 
 // Implement a "growable" stack.
 public class DynStack implements IntStack {

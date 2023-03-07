@@ -1,4 +1,4 @@
-package PackagesAndInterfaces.myPack;
+package packages_and_interfaces.mypack;
 
 // A simple package
 class Balance {

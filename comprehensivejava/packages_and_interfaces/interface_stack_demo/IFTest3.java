@@ -1,4 +1,4 @@
-package PackagesAndInterfaces.interface_stack_demo;
+package packages_and_interfaces.interface_stack_demo;
 
 public class IFTest3 {
     public static void main(String[] args) {

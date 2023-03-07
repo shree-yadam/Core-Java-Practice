@@ -1,4 +1,4 @@
-package PackagesAndInterfaces.InterfaceDemo;
+package packages_and_interfaces.interfacedemo;
 
 public class Client implements Callback{
 

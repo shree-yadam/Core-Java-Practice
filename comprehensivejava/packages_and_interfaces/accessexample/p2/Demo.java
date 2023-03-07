@@ -1,4 +1,4 @@
-package PackagesAndInterfaces.AccessExample.p2;
+package packages_and_interfaces.accessexample.p2;
 
 public class Demo {
     public static void main(String[] args) {
